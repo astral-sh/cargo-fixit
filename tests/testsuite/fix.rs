@@ -119,7 +119,7 @@ error[E0308]: mismatched types
   |                             expected due to this
 
 [WARNING] variable does not need to be mutable
- --> src/lib.rs:3:25
+ --> src/lib.rs:3:[..]
   |
 3 |                     let mut x = 3;
   |                         ----^
