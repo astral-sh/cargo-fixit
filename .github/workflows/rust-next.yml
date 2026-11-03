@@ -32,6 +32,8 @@ jobs:
       # Reduce amount of data cached
       CARGO_PROFILE_DEV_DEBUG: line-tables-only
     steps:
+    - if: runner.os == 'macOS'
+      uses: astral-sh/github-actions/demudhra@7aa50a3def9f5428c532b0ae972d1e5b357de5a5 # 2026.11.03.0
     - name: Checkout repository
       uses: actions/checkout@v7
     - name: Install Rust
